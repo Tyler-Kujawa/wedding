@@ -1,0 +1,114 @@
+/* 
+	STYLE GUIDE 
+
+	(COLOR)
+	CORAL DESERT:	rgb(243,121,122)
+	MARSALA:		rgb(169,84,83)
+	SHINE:			rgb(254,243,205)
+	SWAMPLAND: 		rgb(156,171,126)
+	SAGE:			rgb(189,206,153)
+
+	(FONT)
+	font-family: 'Titillium Web', sans-serif;
+*/
+
+/*
+	Web Elements
+*/
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* 
+	Bootstrap Elements
+*/
+
+.navbar{
+	background-color: rgb(254,243,205)
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* 
+	Links Styles
+*/
+
+.nav a{
+	font-size: 15px;
+	letter-spacing: 2px;
+	padding: 0 10px 0 10px;
+	color: rgb(75,75,75) !important;
+}
+
+li.marsala a:hover{
+	background-color: rgb(169,84,83) !important;
+	color: rgb(254,243,205) !important;
+}
+
+li.marsala a:active{
+	background-color: rgb(169,84,83) !important;
+	color: rgb(254,243,205) !important;
+}
+
+
+li.green a:hover{
+	background-color: rgb(189,206,153) !important;
+	color: rgb(156,171,126) !important;
+}
+
+li.green a:active{
+	background-color: rgb(189,206,153) !important;
+	color: rgb(156,171,126) !important;
+}
+
+/* 
+	Sections
+*/
+
+.section .container{
+	margin: 20px 0 0 20px !important;
+}
+
+.section p{
+	background-color: rgb(255,255,255)
+}
+
+.our-wedding{
+	width:100%;
+	height:100%;
+	background-color: rgb(169,84,83);
+}
+
+.details{
+	width:100%;
+	height:100%;
+	background-color: rgb(189,206,153);
+}
+
+.pictures{
+	width:100%;
+	height:100%;
+	background-color: rgb(169,84,83);
+}
+
+.registry{
+	width:100%;
+	height:100%;
+	background-color: rgb(189,206,153);
+}
+
+
+.rsvp{
+	width:100%;
+	height:100%;
+	background-color: rgb(169,84,83);
+}
