@@ -7,6 +7,7 @@
 	SHINE:			rgb(254,243,205)
 	SWAMPLAND: 		rgb(156,171,126)
 	SAGE:			rgb(189,206,153)
+	GREY:			rgb(50,50,50)
 
 	(FONT)
 	font-family: 'Titillium Web', sans-serif;
@@ -17,7 +18,7 @@
 */
 
 body{
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif; 
 }
 
 /* 
@@ -59,7 +60,6 @@ li.marsala a:active{
 	color: rgb(254,243,205) !important;
 }
 
-
 li.green a:hover{
 	background-color: rgb(189,206,153) !important;
 	color: rgb(156,171,126) !important;
@@ -74,10 +74,6 @@ li.green a:active{
 	Sections
 */
 
-.section .container{
-	margin: 20px 0 0 20px !important;
-}
-
 .section p{
 	background-color: rgb(255,255,255)
 }
@@ -86,6 +82,72 @@ li.green a:active{
 	width:100%;
 	height:100%;
 	background-color: rgb(169,84,83);
+}
+
+.our-wedding .outer-div{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+}
+
+.our-wedding .message-box{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    width: 35%;
+    height: 40%;
+}
+
+.our-wedding .message-box h1{
+	color: rgb(254,243,205);
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 8px;
+    margin: 0 0 0 0;
+}
+
+.our-wedding .message-box h1 .sara{
+	letter-spacing: 2px;
+}
+
+.our-wedding .message-box h1 .ty{
+	letter-spacing: 20px;
+}
+
+.our-wedding .message-box .accent{
+	color: rgb(156,171,126);
+}
+
+.our-wedding .message-box h1{
+	color: rgb(254,243,205);
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 8px;
+    margin: 0 0 0 0;
+}
+
+.our-wedding .message-box h2{
+	color: rgb(169,84,83);
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 55px;
+    letter-spacing: 5px;
+    padding: 10px 0 10px 0;
+    margin: 0 0 0 0;
+}
+
+.our-wedding .message-box h3{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 10px 0 0 0;
+}
+
+.our-wedding .message-box .date-box{
+    background-color: rgb(254,243,205) !important;
 }
 
 .details{
