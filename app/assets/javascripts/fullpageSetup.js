@@ -51,7 +51,11 @@ $(document).ready(function() {
 
         //events
         onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        afterLoad: function(anchorLink, index){
+            console.log($(".navbar-nav a:first-child").first());
+            $(".navbar-nav a:first-child").first().first().addClass('active')
+            .siblings().removeClass('active');
+        },
         afterRender: function(){},
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},

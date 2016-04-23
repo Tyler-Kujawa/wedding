@@ -1,0 +1,37 @@
+<div class="rsvp-form text-center">
+	<div class="col-sm-12">
+		<h1 class="text-center">RSVP</h1>		
+	</div>
+	<%= form_for @rsvp, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+		<div class="form-group">
+			<%= f.label :full_name, class: "col-sm-2 control-label" %>
+			<%= f.text_field :name, class: "col-sm-4 control-label", placeholder:"Name" %>
+
+			<%= f.label :attending, class: "col-sm-1 control-label" %>	
+			<%= f.select :attending, [['Yes', true], ['No', false]], {}, class: "col-sm-2 control-label" %>
+		</div>
+
+		<div class="form-group">
+			<%= f.label :meal, class: "col-sm-2 control-label" %>	
+			<%= f.select :meal, [['Steak', 'steak'], ['Chicken', 'chicken'], ['Vegetarian', 'vegetarian']], {}, class: "col-sm-4 control-label" %>
+
+			<%= f.label :guest, class: "col-sm-1 control-label" %>	
+			<%= f.select :attending, [['Yes', true], ['No', false]], {}, class: "col-sm-2 control-label" %>
+
+		</div>
+
+		<div class="form-group">
+			<%= f.label :comments, class: "col-sm-2 control-label" %>	
+			<%= f.text_area :comments, class: "col-sm-4 control-label", placeholder:"Let us know something", size: "5x5" %>
+
+			<%= f.label :email, class: "col-sm-1 control-label" %>	
+			<%= f.text_field :email, class: "col-sm-4 control-label", placeholder:"Get updates (optional)"%>
+		</div>
+
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+	  			<%= f.submit "Create", class: "btn btn-small" %>				
+			</div>
+		</div>
+	<% end %>				
+</div>
