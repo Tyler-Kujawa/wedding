@@ -48,7 +48,7 @@
 				<div class="form-group">
 					<div class="row">
 					<%= f.label "Guest's Meal", class: "col-sm-4 control-label", id: "guestMealLabel" %>
-					<%= f.text_field :guest_meal, class: "col-sm-8 control-label", id: "guestMealSelection", placeholder:"Name" %>
+					<%= f.select :guest_meal, [['Steak', 'steak'], ['Chicken', 'chicken'], ['Vegetarian', 'vegetarian']], {}, class: "col-sm-8 control-label", id: "guestMealSelection" %>
 					</div>
 				</div>
 			
