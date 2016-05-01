@@ -184,6 +184,7 @@ li.green a:active{
 */
 
 .rsvp-form{
+	width: 100%;
 	background-color: rgb(254,243,205);
 	border-radius: 5px;
 	margin-top: 15%;
