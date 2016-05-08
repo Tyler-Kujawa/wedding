@@ -74,12 +74,8 @@ li.green a:active{
 	Sections
 */
 
-.section p{
-	background-color: rgb(255,255,255)
-}
 
-
-@media(min-width: 400px){
+@media(min-width: 200px){
 	.our-wedding{
 		width:100%;
 		height:100%;
@@ -88,11 +84,11 @@ li.green a:active{
 
 }
 
-@media(min-width: 600px){
+@media(min-width: 1350px){
 	.our-wedding{
 		width:100%;
 		height:100%;
-		background-image: url('background.png');
+		background-image: url('background.jpg');
 	}
 
 }
@@ -154,9 +150,14 @@ li.green a:active{
 
 .our-wedding .message-box h3{
     font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 1px;
     margin: 10px 0 0 0;
+}
+
+.our-wedding .message-box p{
+	background-color: inherit;
+	line-height: 10px;
 }
 
 .our-wedding .message-box .date-box{
@@ -180,13 +181,27 @@ li.green a:active{
 	text-align: center;
 }
 
+.pictures .container h3{
+	color: rgb(189,206,153);
+	font-size: 28px;
+	letter-spacing: -2px;
+	text-shadow: 0px 1px rgb(156,171,126);
+}
+
+.pictures .container p{
+	line-height: 25px;
+	font-size: 15px;
+}
 
 .galleria{
 	/*margin-top: 50px; */
-	width: 1000px; 
-	height: 650px;
+	width: 900px; 
+	height: 550px;
 	background: #000; 
-	margin: auto;
+}
+
+.adjust-margin{
+	margin: 100px auto 0 auto;
 }
 
 .registry{
