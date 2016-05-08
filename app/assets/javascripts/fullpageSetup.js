@@ -2,13 +2,13 @@ $(document).ready(function() {
 
     $('#fullpage').fullpage({
         //Navigation
-        menu: '#menu',
+        menu: '.menu',
         lockAnchors: false,
         anchors:['ourWedding', 'details', 'pictures', 'registry', 'rsvp'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
-        showActiveTooltip: false,
+        navigationTooltips: ['Our Wedding', 'Details', 'Pictures', 'Registry', 'RSVP'],
+        showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
 
@@ -62,5 +62,4 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-
 });

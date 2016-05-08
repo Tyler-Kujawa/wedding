@@ -62,6 +62,4 @@ $(document).ready(function() {
 			$("#guestMealSelection").hide();
 		}
 	});
-
-	Galleria.run(".galleria");
 })
