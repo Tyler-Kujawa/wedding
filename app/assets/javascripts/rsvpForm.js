@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	$('#image1').flexVerticalCenter();
+
 	$("#guestSectionHeader").hide();
 	$("#guestNameLabel").hide();
 	$("#guestName").hide();
@@ -59,4 +62,6 @@ $(document).ready(function() {
 			$("#guestMealSelection").hide();
 		}
 	});
+
+	Galleria.run(".galleria");
 })

@@ -13,5 +13,6 @@
  *= require bootstrap
  *= require fullPage
  *= require bootstrap-theme
+ *= require galleria.classic
  *= require_self
  */

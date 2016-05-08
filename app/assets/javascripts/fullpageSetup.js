@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
@@ -56,9 +57,10 @@ $(document).ready(function() {
             $(".navbar-nav a:first-child").first().first().addClass('active')
             .siblings().removeClass('active');
         },
-        afterRender: function(){},
+        afterRender: function(){ Galleria.run(".galleria"); },
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+
 });
