@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  resources :groups
+
   resources :pictures
   get 'welcome' => 'pictures#homepage'
+  get 'add_guest_fields' => 'pictures#add_guest_fields'
   root 'pictures#homepage'
 
   # The priority is based upon order of creation: first created -> highest priority.

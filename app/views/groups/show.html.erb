@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<% if @group.rsvps.any? %>
+	<h1>Guests</h1>
+	<% @group.rsvps.each do |guest| %>
+		<p>
+	  		<strong>Name:</strong>
+	  		<%= guest.name %>
+
+	  		<strong>Meal:</strong>
+	  		<%= guest.meal %>
+		</p>
+	<% end %>
+<% end %>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @group.comments %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @group.email %>
+</p>
+
+<p>
+  <strong>Attending:</strong>
+  <%= @group.attending %>
+</p>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>

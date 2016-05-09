@@ -52,11 +52,7 @@ $(document).ready(function() {
 
         //events
         onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){
-            console.log($(".navbar-nav a:first-child").first());
-            $(".navbar-nav a:first-child").first().first().addClass('active')
-            .siblings().removeClass('active');
-        },
+        afterLoad: function(anchorLink, index){},
         afterRender: function(){ Galleria.run(".galleria"); },
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},

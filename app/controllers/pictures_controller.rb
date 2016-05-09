@@ -2,7 +2,8 @@ class PicturesController < ApplicationController
 	before_action :go_away_hacker, only: [:edit, :update, :destroy]
 
   def homepage
-    @rsvp = Rsvp.new
+    @group = Group.new
+    @group.rsvps.build
   end
 
   def index

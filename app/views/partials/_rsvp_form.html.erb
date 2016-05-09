@@ -2,15 +2,17 @@
 	<div class="col-md-12">
 		<h1 class="text-center">RSVP</h1>		
 	</div>
-	<%= form_for @rsvp, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+	<%= form_for @group, url: groups_path, html: {class: "form-horizontal"} do |f| %>
 		<div class="row">
 			<div class="col-sm-6">
-				<div class="form-group">;
+
+				<!-- div class="form-group">
 					<div class="row">
-					<%= f.label :full_name, class: "col-sm-4 control-label" %>
-					<%= f.text_field :name, class: "col-sm-8 control-label", placeholder:"Name" %>
+					<input type="hidden" id="guestFieldsRoute" value="<%= url_for(action: 'add_guest_fields', controller: 'pictures')%>">
+					<%= f.label :guest_count, class: "col-sm-4 control-label" %>	
+					<%= f.select :attending, [['1', 1], ['2', 2] ,['3', 3], ['4', 4],['5', 5]], {}, class: "col-sm-8 control-label", id: "guestCount" %>
 					</div>
-				</div>
+				</div>-->
 
 				<div class="form-group">
 					<div class="row">
@@ -19,40 +21,23 @@
 					</div>
 				</div>
 
-				<div class="form-group">
-					<div class="row">
-						<%= f.label :meal, class: "col-sm-4 control-label", id: "mealLabel" %>	
-						<%= f.select :meal, [['Steak', 'steak'], ['Chicken', 'chicken'], ['Vegetarian', 'vegetarian']], {}, class: "col-sm-8 control-label", id: "mealSelection" %>
-					</div>
-			 	</div>
-
-				<div class="form-group">
-					<div class="row">
-					<%= f.label :guest, class: "col-sm-4 control-label", id: "guestAttendingLabel" %>	
-					<%= f.select :attending, [['No', false], ['Yes', true]], {}, class: "col-sm-8 control-label", id: "guestSelection" %>
-					</div>
+				
+				<div id="guestSection">	
+					<h3>Guests</h3>
+					<div id="guestFields">
+						
+					</div>	
+					<%= f.fields_for :rsvps do |rsvp| %>
+						<%= render 'pictures/rsvp_fields', f: rsvp %>
+					<% end %>
 				</div>
 
-				<div class="row" id="guestSectionHeader">
-					<h4>Guest</h4>
-					<hr>
+				<div class="add-more-rsvps">
+					<%= link_to_add_association 'Add', f, :rsvps %>
 				</div>
-
-				<div class="form-group">
-					<div class="row">
-					<%= f.label "Guest's Name", class: "col-sm-4 control-label", id: "guestNameLabel" %>
-					<%= f.text_field :guest_name, class: "col-sm-8 control-label", id: "guestName", placeholder:"Name" %>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<div class="row">
-					<%= f.label "Guest's Meal", class: "col-sm-4 control-label", id: "guestMealLabel" %>
-					<%= f.select :guest_meal, [['Steak', 'steak'], ['Chicken', 'chicken'], ['Vegetarian', 'vegetarian']], {}, class: "col-sm-8 control-label", id: "guestMealSelection" %>
-					</div>
-				</div>
-			
+				
 			</div>
+
 			<div class="col-sm-6">
 				<div class="form-group">
 					<div class="row">
