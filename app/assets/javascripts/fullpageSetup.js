@@ -4,7 +4,7 @@ $(document).ready(function() {
         //Navigation
         menu: '.menu',
         lockAnchors: false,
-        anchors:['ourWedding', 'details', 'pictures', 'registry', 'rsvp'],
+        anchors:['ourWedding', 'details', 'pictures', 'registry', 'rsvp', 'ourStory'],
         navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['Our Wedding', 'Details', 'Pictures', 'Registry', 'RSVP'],
@@ -53,7 +53,9 @@ $(document).ready(function() {
         //events
         onLeave: function(index, nextIndex, direction){},
         afterLoad: function(anchorLink, index){},
-        afterRender: function(){ Galleria.run(".galleria"); },
+        afterRender: function(){ 
+            Galleria.run(".galleria"); 
+        },
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
